@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda online</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <div id="seccionPrincipal">
+        <header class="header">
+            <div class="menu container">
+                <a href="./index.html" class="logo">logo</a>
+                <input type="checkbox" id="menu" />
+                <label for="menu">
+                    <img src="./image/descarga.png" class="menu-icono" alt="menu">
+                </label>
+
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="#" id="linkInicio">Inicio</a></li>
+                        <li><a href="#">servicio</a></li>
+                        <li><a href="#" id="abrirGaleria">Galeria</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                        <li>
+                            <form method="post" class="form-busqueda">
+                                <input type="search" id="search" name="search" placeholder="Buscar..." required>
+                                <button type="submit" name="search-buscar" class="buscar">
+                                    <img src="./image/buscar.png" alt="Buscar">
+                                </button>
+                            </form>
+                        </li>
+                        <li>
+                            <a href="#registro" class="registro">
+                                <span class="person"></span>
+                            </a>
+                        </li>
+                    </ul>
+
+
+                </nav>
+
+                <div>
+                    <ul>
+                        <li class="submenu">
+                            <img src="./image/car.svg" id="img-carrito" alt="carrito">
+                            <div id="carrito">
+                                <table id="lista-carrito">
+                                    <thead>
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <th>Nombre</th>
+                                            <th>Precio</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                                <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="header-content container">
+                <div class="header-img">
+                    <img src="./image/imagen1.png" alt="">
+                </div>
+                <div class="header-txt">
+                    <h1>Las mejores Ofertas </h1>
+                    <p>Diseño. Calidad. Confort.
+                        Muebles hechos para durar.
+                    </p>
+                    <a href="#" class="btn-1">Información</a>
+                </div>
+            </div>
+
+        </header>
+
+        <section class="ofert container">
+            <div class="ofert-1">
+                <div class="ofert-img">
+                    <img src="./image/imagen1.png" alt="">
+                </div>
+                <div class="ofert-txt">
+                    <h3>Mueble</h3>
+                    <a href="#" class="btn-2">Información</a>
+                </div>
+            </div>
+
+            <div class="ofert-1">
+                <div class="ofert-img">
+                    <img src="./image/imagen2.png" alt="">
+                </div>
+                <div class="ofert-txt">
+                    <h3>Juego de comedor</h3>
+                    <a href="#" class="btn-2">Información</a>
+                </div>
+            </div>
+
+            <div class="ofert-1">
+                <div class="ofert-img">
+                    <img src="./image/imagen12.png" alt="">
+                </div>
+                <div class="ofert-txt">
+                    <h3>Butaca</h3>
+                    <a href="#" class="btn-2">Información</a>
+                </div>
+            </div>
+        </section>
+
+        <main class="Products container" id="lista-1">
+
+            <h2>Producto</h2>
+
+            <div class="product-content">
+
+                <div class="product">
+                    <img src="./image/imagen3.png" alt="">
+                    <div class="product-txt">
+                        <h3>Juego de comedor</h3>
+                        <p>Las mejores calidades</p>
+                        <p class="precio">$300</p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="./image/imagen10.png" alt="">
+                    <div class="product-txt">
+                        <h3>Butaca</h3>
+                        <p>Las mejores calidades</p>
+                        <p class="precio">$300</p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="./image/imagen5.png" alt="">
+                    <div class="product-txt">
+                        <h3>Juego de mueble</h3>
+                        <p>Las mejores calidades</p>
+                        <p class="precio">$1500</p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="./image/imagen6.png" alt="">
+                    <div class="product-txt">
+                        <h3>Sofá</h3>
+                        <p>Las mejores calidades</p>
+                        <p class="precio">$500</p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="./image/imagen7.png" alt="">
+                    <div class="product-txt">
+                        <h3>Espaldar de cama</h3>
+                        <p>Las mejores calidades</p>
+                        <p class="precio">$350</p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="./image/imagen9.png" alt="">
+                    <div class="product-txt">
+                        <h3>Mueble</h3>
+                        <p>Las mejores calidades</p>
+                        <p class="precio">$400</p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="6">Agregar al carrito</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </main>
+        <section class="icons container">
+            <div class="icon-1">
+                <div class="icon-img">
+                    <img src="./image/icons.png" alt="">
+                </div>
+                <div class="icon-txt">
+                    <h3>estilo, confort y personalidad.</h3>
+                </div>
+            </div>
+
+            <div class="icon-1">
+                <div class="icon-img">
+                    <img src="./image/icons2.png" alt="">
+                </div>
+                <div class="icon-txt">
+                    <h3>estilo, confort y personalidad.</h3>
+                </div>
+            </div>
+
+            <div class="icon-1">
+                <div class="icon-img">
+                    <img src="./image/icons3.png" alt="">
+                </div>
+                <div class="icon-txt">
+                    <h3>estilo, confort y personalidad.</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog container">
+
+            <div class="blog-1">
+                <img src="./image/mostrario4.png" alt="">
+                <h3>Mostrarios</h3>
+
+                <p>
+                    Cada pieza de nuestro catálogo ha sido cuidadosamente seleccionada para brindarte durabilidad,
+                    funcionalidad y belleza, creando ambientes únicos donde cada momento se disfruta al máximo.
+                </p>
+            </div>
+
+            <div class="blog-1">
+                <img src="./image/mostrario2.png" alt="">
+                <h3>Mostrarios</h3>
+
+                <p>
+                    Cada pieza de nuestro catálogo ha sido cuidadosamente seleccionada para brindarte durabilidad,
+                    funcionalidad y belleza, creando ambientes únicos donde cada momento se disfruta al máximo.
+                </p>
+            </div>
+
+            <div class="blog-1">
+                <img src="./image/mostrario3.png" alt="">
+                <h3>Mostrarios</h3>
+
+                <p>
+                    Cada pieza de nuestro catálogo ha sido cuidadosamente seleccionada para brindarte durabilidad,
+                    funcionalidad y belleza, creando ambientes únicos donde cada momento se disfruta al máximo.
+                </p>
+            </div>
+        </section>
+
+    </div>
+
+
+    <!--Galeria-->
+    <div id="Galeriaoculta" class="slider-container">
+        <div class="slider-viewport">
+
+            <div class="slide" id="slide1">
+                <img src="./image/descarga01.png">
+            </div>
+
+            <div class="slide" id="slide2">
+                <img src="./image/descarga2.png">
+            </div>
+
+            <div class="slide" id="slide3">
+                <img src="./image/descarga3.png">
+            </div>
+
+            <div class="slide" id="slide4">
+                <img src="./image/descarga4.png">
+            </div>
+
+            <div class="slide" id="slide5">
+                <img src="./image/descarga5.png">
+            </div>
+        </div>
+
+        <a id="cerrarGaleria" class="close">Volver al Inicio</a>
+
+        <div class="links">
+            <a href="#slide1">1</a>
+            <a href="#slide2">2</a>
+            <a href="#slide3">3</a>
+            <a href="#slide4">4</a>
+            <a href="#slide5">5</a>
+        </div>
+        </a>
+
+    </div>
+
+    <!--Galeria-->
+
+    <!--registrar-->
+    <div id="registro" class="form-container">
+        <div class="login-container">
+            <h2>Iniciar sesión</h2>
+            <p>Seleccionar al método de autenticación</p>
+
+            <form action="">
+                <p>
+                    <label for="username">Correo electrónico</label>
+                    <input class="input" type="text" name="username" id="username">
+                </p>
+
+                <p>
+                    <label for="password">Contraseña</label>
+                    <input class="input" type="text" name="Password" id="Password">
+                </p>
+
+                <div class="option">
+                    <div>
+                        Mantener la sesión abierta
+                        <input type="checkbox" name="remember me" id="remember me">
+                    </div>
+                    <div>
+                        <a href="#">Olvidé mi contraseña</a>
+                    </div>
+                </div>
+
+                <p>
+                    <input type="submit" class="btn btn-login" value="Iniciar sesión">
+                </p>
+                <div class="providers">
+                    <span>Elige otro método para autenticarte</span>
+                    <button class="btn btn-google">Google</button>
+                    <button class="btn btn-facebook">Facebook</button>
+                    <button class="btn btn-x">X</button>
+                    <span>He leído y acepto los <a href="#">Términos, Condiciones y el Aviso de Privacidad la
+                            Muebleria</a></span>
+                </div>
+            </form>
+            <a href="#linkInicio">Volver al Inicio</a>
+
+        </div>
+        <div class="welcome-screen-container"></div>
+
+    </div>
+    <!--registrar-->
+
+
+
+    <div class="map">
+        <h3>Ubicación</h3>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.192991573648!2d-79.88620968525469!3d-2.189412538704065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d0f8d0e3b3b2b%3A0x8f1c6d2aeb4f8d70!2sGuayaquil%2C%20Ecuador!5e0!3m2!1ses!2sco!4v1698552700000!5m2!1ses!2sco"
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+    </div>
+
+    <footer class="footer">
+
+        <div class="footer-content container">
+
+            <div class="link">
+                <h3>Muebleria</h3>
+                <ul>
+                    <li><a href="#">Muebleria</a></li>
+                    <li><a href="#">Muebleria</a></li>
+                    <li><a href="#">Muebleria</a></li>
+                    <li><a href="#">Muebleria</a></li>
+
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>Muebleria</h3>
+                <ul>
+                    <li><a href="#">Muebleria</a></li>
+                    <li><a href="#">Muebleria</a></li>
+                    <li><a href="#">Muebleria</a></li>
+                    <li><a href="#">Muebleria</a></li>
+
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>Muebleria</h3>
+                <ul>
+                    <li><a href="#">Muebleria</a></li>
+                    <li><a href="#">Muebleria</a></li>
+                    <li><a href="#">Muebleria</a></li>
+                    <li><a href="#">Muebleria</a></li>
+
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>Muebleria</h3>
+                <ul>
+                    <li><a href="#">Muebleria</a></li>
+                    <li><a href="#">Muebleria</a></li>
+                    <li><a href="#">Muebleria</a></li>
+                    <li><a href="#">Muebleria</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./scrip.js"></script>
+</body>
+
+</html>
